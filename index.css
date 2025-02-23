@@ -375,8 +375,31 @@ body {
 .combinator-selectors,
 .pseudo-selectors {
   width: 100%;
-  height: 300px;
   margin-bottom: 50px;
+}
+
+.combinator-selectors {
+  height: 480px;
+}
+.pseudo-selectors {
+  height: 625px;
+}
+
+.pseudo-selectors ul + p {
+  margin-top: 35px;
+}
+
+.pseudo-selectors ul ~ p,
+.combinator-selectors > p > strong {
+  color: orangered;
+}
+
+.pseudo-selectors p:nth-of-type(9) {
+  margin-top: 35px;
+}
+
+.combinator-selectors ul + p {
+  margin-top: 35px;
 }
 
 .pseudo-elements {
